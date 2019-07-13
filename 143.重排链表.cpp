@@ -8,7 +8,7 @@
 // A: 当要赋值指针的时候，ListNode* tmp = cur->next，一定要判断cur->next指针是否为空；cur->next = pre的时候应该判断cur是否为空，如果为空就没有next，则有member access within null pointer of type 'struct ListNode'
 // 
 // Q: 同样都是ListNode类型的指针，为什么一定要 new。因为如果不new，ListNode* pre是个空指针，new一下之后这个指针会指向new出来的空间的地址，也就是指针非空 。只有非空指针才有next指针，否则就是调用了 null->next，这个是不允许的，
-https://www.runoob.com/cplusplus/cpp-constructor-destructor.html，new的重点在于分配空间，类的实例化是一定要用到构造函数的
+// https://www.runoob.com/cplusplus/cpp-constructor-destructor.html，new的重点在于分配空间，类的实例化是一定要用到构造函数的
 
 // 最终答案
 
