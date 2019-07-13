@@ -1,37 +1,3 @@
-// 知识点：vector的基本操作
-// 1 基本操作
-
-(1)头文件#include<vector>.
-
-(2)创建vector对象，vector<int> vec;
-
-(3)尾部插入数字：vec.push_back(a);
-
-(4)使用下标访问元素，cout<<vec[0]<<endl;记住下标是从0开始的。
-
-(5)使用迭代器访问元素.
-
-    
-
-<span style="font-size:18px;">vector<int>::iterator it;
-for(it=vec.begin();it!=vec.end();it++)
-    cout<<*it<<endl;</span>
-
-(6)插入元素：    vec.insert(vec.begin()+i,a);在第i个元素后面插入a;
-
-(7)删除元素：    vec.erase(vec.begin()+2);删除第3个元素
-
-　　　　　　　 vec.erase(vec.begin()+i,vec.end()+j);删除区间[i,j-1];区间从0开始
-
-(8)向量大小:vec.size();
-
-(9)清空:vec.clear()　　　//清空之后，vec.size()为０
---------------------- 
-作者：L未若 
-来源：CSDN 
-原文：https://blog.csdn.net/msdnwolaile/article/details/52708144 
-版权声明：本文为博主原创文章，转载请附上博文链接！
-
 // 我的代码：
 /**
  * Definition for a binary tree node.
