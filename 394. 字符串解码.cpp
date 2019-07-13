@@ -70,6 +70,17 @@ public:
     }
 };
 
+// main 函数
+int main()
+{
+    cout << "Hello world!" << endl;
+    Solution s;
+    string text = "3[a]2[bc]";
+    string str = s.decodeString(text);
+    cout << str <<endl;
+    return 0;
+}
+
 
 
 
