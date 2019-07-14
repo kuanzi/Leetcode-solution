@@ -75,7 +75,8 @@ int main()
 		cout << m_testPoint[i].x << "	" << m_testPoint[i].y << endl;
 	}
  
-	//第二种遍历方式，迭代器 vector<Point>::iterator
+	//第二种遍历方式，迭代器 vector<Point>::iterator, 不要在循环中判断不等于end()
+	// 迭代器的算术操作仅有将两个迭代器相减,算出两个迭代器之间的距离;迭代器没有相加运算
 	cout << "第二种遍历方式，迭代器访问" << endl;
 	for (vector<Point>::iterator iter = m_testPoint.begin(); iter != m_testPoint.end(); iter++)
 	{
